@@ -1,0 +1,9 @@
+# This file contains additional build requirements that did not get
+# picked up automatically. One name per line, no whitespace.
+python3-dev
+six
+deprecated-six-legacypython
+argparse
+deprecated-traceback2-legacypython
+deprecated-linecache2-legacypython
+setuptools-legacypython

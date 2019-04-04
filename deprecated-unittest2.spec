@@ -6,7 +6,7 @@
 #
 Name     : deprecated-unittest2
 Version  : 1.1.0
-Release  : 60
+Release  : 61
 URL      : http://pypi.debian.net/unittest2/unittest2-1.1.0.tar.gz
 Source0  : http://pypi.debian.net/unittest2/unittest2-1.1.0.tar.gz
 Source99 : http://pypi.debian.net/unittest2/unittest2-1.1.0.tar.gz.asc
@@ -68,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1554336103
+export SOURCE_DATE_EPOCH=1554340952
 export MAKEFLAGS=%{?_smp_mflags}
 python2 setup.py build -b py2
 
@@ -82,7 +82,7 @@ python2 -tt setup.py build -b py2 install --root=%{buildroot}
 
 %files bin
 %defattr(-,root,root,-)
-/usr/bin/unit2
+%exclude /usr/bin/unit2
 
 %files legacypython
 %defattr(-,root,root,-)
